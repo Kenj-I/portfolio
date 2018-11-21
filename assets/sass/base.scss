@@ -1,0 +1,38 @@
+html {
+  font-size: $font-size-reset;
+}
+
+body {
+	@import url('https://fonts.googleapis.com/css?family=Quicksand');
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+	color: $color-black;
+	word-wrap: break-word;
+  font-family: $font-family;
+
+	//端末を横にしたときの自動調整をなしにする
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+	//文字がスッキリ見えるようになる。細かったら外す
+	// -moz-osx-font-smoothing: grayscale;
+	// -webkit-font-smoothing: antialiased;
+	// text-rendering: optimizeLegibility;
+}
+
+input:focus, button:focus, select:focus {
+  outline: 0;
+}
+
+a {
+	text-decoration: none;
+  color: $color-black;
+
+	&:visited {
+		color: inherit;
+	}
+
+	&:click {
+		color: inherit;
+	}
+}
