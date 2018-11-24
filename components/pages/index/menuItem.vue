@@ -1,13 +1,17 @@
 <template>
   <li>
-    <slot />
+    <router-link
+      :to="url"
+    >
+      <slot />
+    </router-link>
   </li>
 </template>
 
 <script>
 export default {
   props: {
-    ref: {
+    url: {
       default: '',
       type: String,
     },

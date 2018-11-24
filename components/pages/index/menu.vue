@@ -4,7 +4,7 @@
       <item
         v-for="(item, key) in menuList"
         :key="key"
-        :ref="item.ref"
+        :url="item.url"
         class="menu__item">
         {{ item.name }}
       </item>
@@ -21,11 +21,11 @@ export default {
   },
   data: () => ({
     menuList: [
-      { name: 'About', ref: 'about' },
-      { name: 'Skills', ref: 'skills' },
-      { name: 'Works', ref: 'works' },
-      { name: 'Blog', ref: 'blog' },
-      { name: 'Contact', ref: 'contact' },
+      { name: 'About', url: 'about' },
+      { name: 'Skills', url: 'skills' },
+      { name: 'Works', url: 'works' },
+      { name: 'Blog', url: 'blog' },
+      { name: 'Contact', url: 'contact' },
     ],
   }),
 };

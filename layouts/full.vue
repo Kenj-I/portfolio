@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fullview">
     <nuxt/>
     <foot class="footer"/>
   </div>
@@ -17,29 +17,7 @@ export default {
 </script>
 
 
-<style lang="scss">
-html {
-  height: 100%;
-}
-
-body {
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    filter: blur(3px);
-  }
-
-  height: 100%;
-  background-image: url('../assets/images/background.png');
-  background-position: center center;
-  background-size: cover;
-}
-
+<style lang="scss" scoped>
 .footer {
   position: absolute;
   bottom: 30px;
