@@ -8,7 +8,9 @@ export default {};
 
 <style lang="scss" scoped>
 h1 {
-  text-align: center;
   font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 </style>
