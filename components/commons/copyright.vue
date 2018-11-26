@@ -10,5 +10,6 @@ export default {};
 p {
   letter-spacing: 2px;
   font-size: 1.6rem;
+  text-align: center;
 }
 </style>
