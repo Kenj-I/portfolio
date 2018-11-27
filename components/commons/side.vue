@@ -26,7 +26,9 @@ export default {
   width: 250px;
   height: 100vh;
   box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.15);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
 
   .title {
     margin: 100px 0;
