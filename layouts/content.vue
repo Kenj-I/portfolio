@@ -22,19 +22,20 @@ export default {
 
 <style lang="scss" scoped>
 .page-wrapper {
-  height: 100%;
+  min-height: 100%;
 
   .content-wrapper {
-    height: 100%;
+    min-height: 100%;
     padding: 80px 0 80px 250px;
 
     .content-container {
       background-color: $color-white;
       width: 700px;
-      height: 100%;
+      min-height: 100%;
       border-radius: 10px;
       box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.15);
       margin: 0 auto;
+      padding: 50px;
 
       .content {
       }
