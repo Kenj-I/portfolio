@@ -13,5 +13,10 @@ export default {};
   font-size: 1.2rem;
   letter-spacing: 2px;
   line-height: 1.7;
+  margin-bottom: 10px;
+
+  p {
+    margin-bottom: 10px;
+  }
 }
 </style>

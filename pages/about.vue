@@ -60,17 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 article {
-  .section-title {
-    margin-bottom: 15px;
-  }
-
   .content {
-    margin-bottom: 10px;
-
-    p {
-      margin-bottom: 10px;
-    }
-
     .history-list {
       padding-left: 20px;
 

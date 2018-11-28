@@ -3,7 +3,7 @@
     <contentTitle>
       Skills
     </contentTitle>
-    <section>
+    <sectionContainer>
       <sectionTitle>
         Backend
       </sectionTitle>
@@ -12,8 +12,8 @@
           PHP/FuelPHP/Laravel/WordPress
         </p>
       </sectionContent>
-    </section>
-    <section>
+    </sectionContainer>
+    <sectionContainer>
       <sectionTitle>
         Frontend
       </sectionTitle>
@@ -22,23 +22,24 @@
         <p>CSS/Sass</p>
         <p>JavaScript/Vue.js/Nuxt.js/jQuery</p>
       </sectionContent>
-    </section>
-    <section>
+    </sectionContainer>
+    <sectionContainer>
       <sectionTitle>
         Another
       </sectionTitle>
       <sectionContent class="content">
-        <p>CentOS/Ubuntu/Apache/Nginx/Mysqlo</p>
+        <p>CentOS/Ubuntu/Apache/Nginx/Mysql</p>
         <p>Docker/Vagrant/zsh/Atom/VScode</p>
         <p>Git/Slack</p>
         <p>Sketch/Photoshop</p>
       </sectionContent>
-    </section>
+    </sectionContainer>
   </article>
 </template>
 
 <script>
 import contentTitle from '@/components/commons/contentTitle';
+import sectionContainer from '@/components/commons/sectionContainer';
 import sectionTitle from '@/components/commons/sectionTitle';
 import sectionContent from '@/components/commons/sectionContent';
 
@@ -46,6 +47,7 @@ export default {
   layout: 'content',
   components: {
     contentTitle,
+    sectionContainer,
     sectionTitle,
     sectionContent,
   },
