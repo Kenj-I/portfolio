@@ -13,5 +13,6 @@ h1 {
   font-size: 2.4rem;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 </style>

@@ -3,7 +3,7 @@
     <contentTitle class="title">
       About
     </contentTitle>
-    <section>
+    <sectionContainer>
       <sectionTitle class="section-title">Me</sectionTitle>
       <sectionContent class="content">
         <ul>
@@ -12,21 +12,21 @@
           <li>Job : Web Developer</li>
         </ul>
       </sectionContent>
-    </section>
-    <section>
+    </sectionContainer>
+    <sectionContainer>
       <sectionTitle class="section-title">Profile</sectionTitle>
       <sectionContent class="content">
         <p>
-          学生時代にWebの世界へ入り込みそこからWeb Developerに。<br>
-          現在は東京でシステム開発の会社で働いています。<br>
+          学生時代にWebの世界へ入り込み、そこからWeb Developerに。<br>
+          現在は東京でシステム開発会社で働いています。<br>
           業務では主にPHPを使用したシステム開発のサーバーサイド、最近だとVue.jsを使用したフロントエンドを担当。
         </p>
         <p>
-          趣味はトレーニングとランニング。毎週欠かさないくらいハマってます。あとはコーヒーを淹れて飲むのと、サウナで体を癒やすことが好きです。
+          趣味はトレーニングとランニング。毎週欠かさないくらいハマってます。あとはコーヒーを淹れて飲むのと、サウナで体を整えるが好きです。
         </p>
       </sectionContent>
-    </section>
-    <section>
+    </sectionContainer>
+    <sectionContainer>
       <sectionTitle class="section-title" >History</sectionTitle>
       <sectionContent class="content">
         <ul class="history-list">
@@ -37,12 +37,13 @@
           <li>2017年~現在 システム開発会社に勤務</li>
         </ul>
       </sectionContent>
-    </section>
+    </sectionContainer>
   </article>
 </template>
 
 <script>
 import contentTitle from '@/components/commons/contentTitle';
+import sectionContainer from '@/components/commons/sectionContainer';
 import sectionTitle from '@/components/commons/sectionTitle';
 import sectionContent from '@/components/commons/sectionContent';
 
@@ -52,63 +53,55 @@ export default {
     contentTitle,
     sectionTitle,
     sectionContent,
+    sectionContainer,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 article {
-  .title {
-    margin-bottom: 50px;
+  .section-title {
+    margin-bottom: 15px;
   }
 
-  section {
-    padding-left: 50px;
-    margin-bottom: 30px;
+  .content {
+    margin-bottom: 10px;
 
-    .section-title {
-      margin-bottom: 15px;
+    p {
+      margin-bottom: 10px;
     }
 
-    .content {
-      margin-bottom: 10px;
+    .history-list {
+      padding-left: 20px;
 
-      p {
-        margin-bottom: 10px;
-      }
+      li {
+        margin-bottom: 20px;
+        position: relative;
 
-      .history-list {
-        padding-left: 20px;
+        &::before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: $color-primary;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -20px;
+        }
 
-        li {
-          margin-bottom: 20px;
-          position: relative;
+        &::after {
+          content: '';
+          width: 5px;
+          height: 20px;
+          background-color: $color-primary-light;
+          position: absolute;
+          bottom: -20px;
+          left: -18px;
+        }
 
-          &::before {
-            content: '';
-            width: 10px;
-            height: 10px;
-            border-radius: 5px;
-            background-color: $color-primary;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -20px;
-          }
-
-          &::after {
-            content: '';
-            width: 5px;
-            height: 20px;
-            background-color: $color-primary-light;
-            position: absolute;
-            bottom: -20px;
-            left: -18px;
-          }
-
-          &:last-of-type::after {
-            display: none;
-          }
+        &:last-of-type::after {
+          display: none;
         }
       }
     }
