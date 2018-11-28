@@ -16,7 +16,11 @@ export default {};
   margin-bottom: 10px;
 
   p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-bottom: 5px;
   }
 }
 </style>
