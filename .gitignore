@@ -70,7 +70,6 @@ typings/
 
 # Nuxt generate
 dist
-gh-pages
 
 # vuepress build output
 .vuepress/dist
