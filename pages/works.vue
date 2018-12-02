@@ -1,5 +1,5 @@
 <template>
-  <article class="skills">
+  <article class="works">
     <contentTitle>
       Works
     </contentTitle>
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.skills {
+.works {
   a {
     text-decoration: underline;
   }

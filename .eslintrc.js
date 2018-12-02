@@ -33,6 +33,11 @@ module.exports = {
         'e' // for e.returnvalue
       ]
     }],
+    'no-shadow': ["error", {
+      allow: [
+        "state"// for vuex state
+      ]
+    }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prettier/prettier': [
