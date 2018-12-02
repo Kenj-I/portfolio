@@ -22,11 +22,11 @@ export default {
   },
   data: () => ({
     menuList: [
-      { name: 'About', url: 'about' },
-      { name: 'Skills', url: 'skills' },
-      { name: 'Works', url: 'works' },
-      { name: 'Blog', url: 'blog' },
-      { name: 'Contact', url: 'contact' },
+      { name: 'About', url: '/about' },
+      { name: 'Skills', url: '/skills' },
+      { name: 'Works', url: '/works' },
+      { name: 'Blog', url: '/blog' },
+      { name: 'Contact', url: '/contact' },
     ],
   }),
 };
