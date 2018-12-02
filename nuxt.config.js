@@ -1,14 +1,8 @@
 const pkg = require('./package');
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/portfolio',
-        },
-      }
-    : {};
+const baseRoute = env => (env === 'GH_PAGES' ? '/portfolio/' : '/');
+console.log(baseRoute(process.env.DEPLOY_ENV));
 
 module.exports = {
   mode: 'universal',
@@ -26,7 +20,9 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  routerBase,
+  router: {
+    base: baseRoute(process.env.DEPLOY_ENV),
+  },
 
   /*
   ** Customize the progress-bar color
