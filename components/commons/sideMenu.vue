@@ -5,7 +5,7 @@
         v-for="(item, key) in menuList"
         :key="key"
         :url="item.url"
-        :current="$route.name === item.url"
+        :current="$route.path === item.url"
         class="item">
         {{ item.name }}
       </item>
