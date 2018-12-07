@@ -2,7 +2,7 @@ const pkg = require('./package');
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
 const baseRoute = env => (env === 'GH_PAGES' ? '/portfolio/' : '/');
-console.log(baseRoute(process.env.DEPLOY_ENV));
+// console.log(baseRoute(process.env.DEPLOY_ENV));
 
 module.exports = {
   mode: 'universal',
@@ -11,11 +11,39 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    // title: pkg.name,
+    title: "Ken's Portfolio",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Webエンジニアとして働くKenのポートフォリオサイト。プロフィール、スキル、実績を紹介しています',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Webエンジニアとして働くKenのポートフォリオサイト。プロフィール、スキル、実績を紹介しています',
+      },
+      {
+        property: 'og:image',
+        content: 'https://kenj-i.github.io/portfolio/ogp.png',
+      },
+      { property: 'og:site_name', content: "Ken's Portfolio" },
+      { property: 'twitter:card', content: 'summary_large_image' },
+      { property: 'twitter:site', content: '@gootablog' },
+      { property: 'twitter:creator', content: '@gootablog' },
+      {
+        property: 'twitter:description',
+        content:
+          'Webエンジニアとして働くKenのポートフォリオサイト。プロフィール、スキル、実績を紹介しています',
+      },
+      {
+        property: 'twitter:image',
+        content: 'https://kenj-i.github.io/portfolio/ogp.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
