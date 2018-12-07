@@ -1,6 +1,23 @@
 <template>
-  <nuxt class="body-wrapper"/>
+  <div class="main-wrapper">
+    <loading class="loading"/>
+    <nuxt v-if="!$slots.default" />
+    <slot />
+  </div>
 </template>
+
+<script>
+import loading from '@/components/commons/loading';
+
+export default {
+  components: {
+    loading,
+  },
+  beforeMount() {
+    this.$store.dispatch('feed/fetchFeed');
+  },
+};
+</script>
 
 <style lang="scss">
 @import '../assets/sass/base.scss';

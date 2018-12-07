@@ -1,20 +1,23 @@
 <template>
-  <div class="page-wrapper">
-    <side class="side"/>
-    <div class="content-wrapper">
-      <div class="content-container">
-        <nuxt class="content"/>
+  <defaultLayout>
+    <div class="page-wrapper">
+      <side class="side"/>
+      <div class="content-wrapper">
+        <div class="content-container">
+          <nuxt class="content"/>
+        </div>
       </div>
     </div>
-  </div>
+  </defaultLayout>
 </template>
 
 <script>
+import defaultLayout from '@/layouts/default';
 import side from '@/components/commons/side';
 
 export default {
-  layout: 'defualt',
   components: {
+    defaultLayout,
     side,
   },
 };

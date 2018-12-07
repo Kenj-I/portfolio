@@ -33,9 +33,9 @@ import sectionContent from '@/components/commons/sectionContent';
 
 export default {
   layout: 'content',
-  async fetch({ store }) {
-    await store.dispatch('feed/fetchFeed');
-  },
+  // async fetch({ store }) {
+  //   await store.dispatch('feed/fetchFeed');
+  // },
   components: {
     contentTitle,
     sectionContainer,
