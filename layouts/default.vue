@@ -13,8 +13,11 @@ export default {
   components: {
     loading,
   },
-  beforeMount() {
-    this.$store.dispatch('feed/fetchFeed');
+  async beforeMount() {
+    await this.$store.dispatch('feed/fetchFeed');
+    setTimeout(() => {
+      this.$store.dispatch('status/setStatus', false);
+    }, 1000);
   },
 };
 </script>

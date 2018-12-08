@@ -10,13 +10,7 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    setTimeout(() => {
-      this.$store.dispatch('status/setStatus', false);
-    }, 2000);
-  },
-};
+export default {};
 </script>
 
 <style lang='scss' scoped>
