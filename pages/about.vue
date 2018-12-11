@@ -1,60 +1,67 @@
 <template>
-  <article class="about">
-    <contentTitle class="title">
-      About
-    </contentTitle>
-    <sectionContainer>
-      <sectionTitle class="section-title">Me</sectionTitle>
-      <sectionContent class="content">
-        <ul>
-          <li>Name : Ken</li>
-          <li>Age: 25</li>
-          <li>Job : Web Developer</li>
-        </ul>
-      </sectionContent>
-    </sectionContainer>
-    <sectionContainer>
-      <sectionTitle class="section-title">Profile</sectionTitle>
-      <sectionContent class="content">
-        <p>
-          学生時代にWebの世界へ入り込み、そこからWeb Developerに。<br>
-          現在は東京でシステム開発会社で働いています。<br>
-          業務では主にPHPを使用したシステム開発のサーバーサイド、最近だとVue.jsを使用したフロントエンドを担当。
-        </p>
-        <p>
-          趣味はトレーニングとランニング。毎週欠かさないくらいハマってます。あとはコーヒーを淹れて飲むのと、サウナで体を整えるが好きです。
-        </p>
-      </sectionContent>
-    </sectionContainer>
-    <sectionContainer>
-      <sectionTitle class="section-title" >History</sectionTitle>
-      <sectionContent class="content">
-        <ul class="history-list">
-          <li>1993年 東京にて生まれる</li>
-          <li>2012年 四年制大学 入学</li>
-          <li>2015年 休学・プログラミングを勉強し始める</li>
-          <li>2017年 四年制大学 卒業</li>
-          <li>2017年~現在 システム開発会社に勤務</li>
-        </ul>
-      </sectionContent>
-    </sectionContainer>
-  </article>
+  <contentCard class="card">
+    <article class="about">
+      <contentTitle class="title">
+        About
+      </contentTitle>
+      <sectionContainer>
+        <sectionTitle class="section-title">Me</sectionTitle>
+        <sectionContent class="content">
+          <ul>
+            <li>Name : Ken</li>
+            <li>Age: 25</li>
+            <li>Job : Web Developer</li>
+          </ul>
+        </sectionContent>
+      </sectionContainer>
+      <sectionContainer>
+        <sectionTitle class="section-title">Profile</sectionTitle>
+        <sectionContent class="content">
+          <p>
+            学生時代にWebの世界へ入り込み、そこからWeb Developerに。<br>
+            現在は東京でシステム開発会社で働いています。<br>
+            業務では主にPHPを使用したシステム開発のサーバーサイド、最近だとVue.jsを使用したフロントエンドを担当。
+          </p>
+          <p>
+            趣味はトレーニングとランニング。毎週欠かさないくらいハマってます。あとはコーヒーを淹れて飲むのと、サウナで体を整えるが好きです。
+          </p>
+        </sectionContent>
+      </sectionContainer>
+      <sectionContainer>
+        <sectionTitle class="section-title" >History</sectionTitle>
+        <sectionContent class="content">
+          <ul class="history-list">
+            <li>1993年 東京にて生まれる</li>
+            <li>2012年 四年制大学 入学</li>
+            <li>2015年 休学・プログラミングを勉強し始める</li>
+            <li>2017年 四年制大学 卒業</li>
+            <li>2017年~現在 システム開発会社に勤務</li>
+          </ul>
+        </sectionContent>
+      </sectionContainer>
+    </article>
+  </contentCard>
 </template>
 
 <script>
+import contentCard from '@/components/commons/contentCard';
 import contentTitle from '@/components/commons/contentTitle';
 import sectionContainer from '@/components/commons/sectionContainer';
 import sectionTitle from '@/components/commons/sectionTitle';
 import sectionContent from '@/components/commons/sectionContent';
 
+import pageTransition from '@/mixins/pageTransition';
+
 export default {
   layout: 'content',
   components: {
+    contentCard,
     contentTitle,
     sectionTitle,
     sectionContent,
     sectionContainer,
   },
+  mixins: [pageTransition],
 };
 </script>
 

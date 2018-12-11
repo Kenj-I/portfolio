@@ -29,6 +29,7 @@ export default {
       { name: 'Contact', url: '/contact' },
     ],
   }),
+  methods: {},
 };
 </script>
 

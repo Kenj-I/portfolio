@@ -24,7 +24,6 @@ export const actions = {
 
     const date = new Date();
     const now = Math.floor(date.getTime() / 1000);
-    console.log(now);
     return new Promise((resolve, reject) => {
       if (state.expired === '' || state.expired < now) {
         const parser = new Parser({
@@ -36,7 +35,6 @@ export const actions = {
           `${CORS_PROXY}https://gootablog.com/rss`,
           (err, feeds) => {
             if (err) {
-              console.log(err);
               commit('setError', err);
               commit('setExpired', '');
               reject();

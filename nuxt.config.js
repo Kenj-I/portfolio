@@ -1,4 +1,4 @@
-const pkg = require('./package');
+// const pkg = require('./package');
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
 const baseRoute = env => (env === 'GH_PAGES' ? '/portfolio/' : '/');
@@ -45,7 +45,13 @@ module.exports = {
         content: 'https://kenj-i.github.io/portfolio/ogp.png',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Quicksand',
+      },
+    ],
   },
 
   router: {
@@ -55,13 +61,13 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  // loading: false,
-  loading: { color: '#5DA9C3' },
+  loading: false,
+  // loading: { color: '#5DA9C3' },
 
   /*
   ** Global CSS
   */
-  css: ['@/assets/sass/reset.scss'],
+  css: ['@/assets/sass/reset.scss', '@/assets/sass/common.scss'],
 
   /*
   ** Plugins to load before mounting the App
