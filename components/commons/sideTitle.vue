@@ -1,6 +1,8 @@
 <template>
   <h1>
-    Ken's portfolio
+    <router-link to="/">
+      Ken's portfolio
+    </router-link>
   </h1>
 </template>
 

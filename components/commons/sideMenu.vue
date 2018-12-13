@@ -5,7 +5,7 @@
         v-for="(item, key) in menuList"
         :key="key"
         :url="item.url"
-        :current="$route.name === item.url"
+        :current="$route.path === item.url"
         class="item">
         {{ item.name }}
       </item>
@@ -22,13 +22,14 @@ export default {
   },
   data: () => ({
     menuList: [
-      { name: 'About', url: 'about' },
-      { name: 'Skills', url: 'skills' },
-      { name: 'Works', url: 'works' },
-      { name: 'Blog', url: 'blog' },
-      { name: 'Contact', url: 'contact' },
+      { name: 'About', url: '/about' },
+      { name: 'Skills', url: '/skills' },
+      { name: 'Works', url: '/works' },
+      { name: 'Blog', url: '/blog' },
+      { name: 'Contact', url: '/contact' },
     ],
   }),
+  methods: {},
 };
 </script>
 

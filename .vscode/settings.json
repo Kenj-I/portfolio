@@ -1,0 +1,7 @@
+{
+  "eslint.nodePath": "./node_modules",
+  "eslint.options": {
+    "configFile": "./.eslintrc.js"
+  },
+  "eslint.workingDirectories": ["./"],
+}

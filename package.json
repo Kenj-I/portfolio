@@ -9,13 +9,16 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate && rm -rf gh-pages/* && cp -r dist/ gh-pages/",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate && rm -rf docs/* && cp -r dist/ docs/",
+    "gh-pages": "git subtree push --prefix gh-pages origin gh-pages",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/google-analytics": "^2.0.2",
     "cross-env": "^5.2.0",
+    "gsap": "^2.0.2",
     "nuxt": "^2.0.0",
     "rss-parser": "^3.5.4"
   },
@@ -30,7 +33,7 @@
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.10.0",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.18.7",
     "nuxt-sass-resources-loader": "^2.0.5",
     "prettier": "1.14.3",
     "sass-loader": "^7.1.0"
