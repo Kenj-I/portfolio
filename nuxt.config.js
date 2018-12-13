@@ -84,6 +84,12 @@ module.exports = {
       'nuxt-sass-resources-loader',
       ['@/assets/sass/variables.scss', '@/assets/sass/mixin.scss'],
     ],
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-100349346-3',
+      },
+    ],
   ],
   /*
   ** Axios module configuration
