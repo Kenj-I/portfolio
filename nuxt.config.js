@@ -44,6 +44,10 @@ module.exports = {
         property: 'twitter:image',
         content: 'https://kenj-i.github.io/portfolio/ogp.png',
       },
+      {
+        property: 'google-site-verification',
+        content: '3TJvlHPaG_Ysuwnex4cM1d27iWtKc-VYciCxdEC7zeU',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
