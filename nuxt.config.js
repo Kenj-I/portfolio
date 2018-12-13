@@ -95,6 +95,7 @@ module.exports = {
         id: 'UA-100349346-3',
       },
     ],
+    '@nuxtjs/sitemap',
   ],
   /*
   ** Axios module configuration
