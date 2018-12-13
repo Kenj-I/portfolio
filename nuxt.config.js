@@ -45,7 +45,7 @@ module.exports = {
         content: 'https://kenj-i.github.io/portfolio/ogp.png',
       },
       {
-        property: 'google-site-verification',
+        name: 'google-site-verification',
         content: '3TJvlHPaG_Ysuwnex4cM1d27iWtKc-VYciCxdEC7zeU',
       },
     ],
