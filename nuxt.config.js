@@ -87,7 +87,11 @@ module.exports = {
     '@nuxtjs/axios',
     [
       'nuxt-sass-resources-loader',
-      ['@/assets/sass/variables.scss', '@/assets/sass/mixin.scss'],
+      [
+        '@/assets/sass/variables.scss',
+        '@/assets/sass/breakpoint.scss',
+        '@/assets/sass/mixin.scss',
+      ],
     ],
     [
       '@nuxtjs/google-analytics',
