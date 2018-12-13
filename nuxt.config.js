@@ -1,8 +1,8 @@
 // const pkg = require('./package');
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
-const baseRoute = env => (env === 'GH_PAGES' ? '/portfolio/' : '/');
-// console.log(baseRoute(process.env.DEPLOY_ENV));
+// 独自ドメインしようのためコメントアウト
+// const baseRoute = env => (env === 'GH_PAGES' ? '/portfolio/' : '/');
 
 module.exports = {
   mode: 'universal',
@@ -55,7 +55,8 @@ module.exports = {
   },
 
   router: {
-    base: baseRoute(process.env.DEPLOY_ENV),
+    // base: baseRoute(process.env.DEPLOY_ENV),
+    base: '/',
   },
 
   /*
