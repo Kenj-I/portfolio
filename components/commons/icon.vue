@@ -1,7 +1,8 @@
 <template>
   <img
     :src="src"
-    :alt="alt">
+    :alt="alt"
+  >
 </template>
 
 <script>
@@ -19,6 +20,5 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
 </style>

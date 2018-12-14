@@ -1,0 +1,29 @@
+@mixin bp-sp {
+  @media screen and (max-width: 479) {
+    @content;
+  }
+}
+
+@mixin bp-sp-w {
+  @media screen and (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin bp-tab {
+  @media (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin bp-pc {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin bp-pc-w {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
