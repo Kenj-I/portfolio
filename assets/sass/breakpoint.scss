@@ -1,11 +1,11 @@
 @mixin bp-sp {
-  @media (max-width: 479) {
+  @media screen and (max-width: 479) {
     @content;
   }
 }
 
 @mixin bp-sp-w {
-  @media (max-width: 599px) {
+  @media screen and (max-width: 599px) {
     @content;
   }
 }
