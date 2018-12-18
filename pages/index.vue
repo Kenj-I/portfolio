@@ -42,6 +42,7 @@ export default {
       TweenMax.to('.main, .footer', 0.8, {
         opacity: 1,
         scale: 1,
+        clearProps: 'transform',
         ease: Power3.easeOut,
         startAt: {
           opacity: 0,
