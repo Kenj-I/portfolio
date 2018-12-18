@@ -11,9 +11,6 @@ p {
   letter-spacing: 2px;
   font-size: 1.6rem;
   text-align: center;
-
-  @include bp-tab {
-    color: $color-white;
-  }
+  white-space: nowrap;
 }
 </style>

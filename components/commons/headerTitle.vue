@@ -1,5 +1,9 @@
 <template>
-  <h1>Ken's Portfolio</h1>
+  <h1>
+    <router-link to="/">
+      Ken's Portfolio
+    </router-link>
+  </h1>
 </template>
 
 <script>
