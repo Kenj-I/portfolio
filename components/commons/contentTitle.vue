@@ -11,7 +11,7 @@ export default {};
 <style lang='scss' scoped>
 h1 {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 50px;
 }

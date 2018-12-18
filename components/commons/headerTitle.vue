@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   padding: 10px 0;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 5px;
   display: none;
 
