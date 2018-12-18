@@ -66,6 +66,12 @@ export default {
     color: $color-white;
   }
 
+  a {
+    @include bp-tab {
+      color: $color-white;
+    }
+  }
+
   .mark {
     width: 10px;
     height: 10px;
