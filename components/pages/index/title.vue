@@ -10,7 +10,7 @@ export default {};
 h1 {
   font-size: 5rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 5px;
 
   @include bp-sp-w {

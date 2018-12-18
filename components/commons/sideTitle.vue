@@ -13,7 +13,7 @@ export default {};
 <style lang='scss' scoped>
 h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 5px;
   line-height: 3rem;
 }
