@@ -53,7 +53,7 @@ export default {
     padding: 80px 0 80px 250px;
 
     @include bp-tab {
-      padding: 50px 0;
+      padding: 20px 0;
     }
 
     .content {

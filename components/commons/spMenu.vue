@@ -24,36 +24,10 @@ export default {
     },
   },
   watch: {
-    //   spMenuActive(newStatus) {
-    //     if (newStatus) {
-    //       this.fadeIn();
-    //     } else {
-    //       this.fadeOut();
-    //     }
-    //   },
     $route() {
       this.$store.dispatch('menu/changeStatus', false);
     },
   },
-  // methods: {
-  //   fadeIn() {
-  //     TweenMax.to('.menu-list', 0.4, {
-  //       bottom: 0,
-  //       ease: Power4.easeOut,
-  //       startAt: {
-  //         bottom: '-400px',
-  //         display: 'block',
-  //       },
-  //     });
-  //   },
-  //   fadeOut() {
-  //     TweenMax.to('.menu-list', 0.4, {
-  //       bottom: '-400px',
-  //       display: 'none',
-  //       ease: Power4.easeOut,
-  //     });
-  //   },
-  // },
 };
 </script>
 
@@ -82,5 +56,9 @@ export default {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+
+  /deep/ p {
+    color: $color-white;
+  }
 }
 </style>
