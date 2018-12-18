@@ -6,21 +6,19 @@
       </contentTitle>
       <sectionContainer>
         <sectionTitle>
-          最新記事
+          <a
+            href="https://gootablog.com"
+            target="_blank"
+          >
+            Goota
+          </a>
         </sectionTitle>
-        <sectionContent v-if="feeds">
-          <ul>
-            <li
-              v-for="(entry, key) of feeds"
-              :key="key"
-              class="entry">
-              <a
-                :href="entry.url"
-                target="_blank">
-                {{ entry.title }}
-              </a>
-            </li>
-          </ul>
+        <sectionContent >
+          <p>
+            テック系の備忘録とライフログのブログを書いています。<br>
+            WordPressのテーマは自作したものを使っています。
+          </p>
+          <p>現在は月に5000PV~10000PVくらい読まれています。</p>
         </sectionContent>
       </sectionContainer>
     </article>
@@ -46,18 +44,17 @@ export default {
     sectionContent,
   },
   mixins: [pageTransition],
-  computed: {
-    feeds() {
-      return this.$store.state.feed.feeds;
-    },
-  },
+  // computed: {
+  //   feeds() {
+  //     return this.$store.state.feed.feeds;
+  //   },
+  // },
 };
 </script>
 
 <style lang='scss' scoped>
 .blog {
-  .entry {
-    margin-bottom: 20px;
+  a {
     text-decoration: underline;
   }
 }

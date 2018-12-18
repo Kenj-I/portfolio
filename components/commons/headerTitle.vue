@@ -6,16 +6,17 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 h1 {
-  font-size: 5rem;
   text-align: center;
+  font-size: 3rem;
+  padding: 10px 0;
   font-weight: bold;
   letter-spacing: 5px;
+  display: none;
 
-  @include bp-sp-w {
-    font-size: 3rem;
-    white-space: nowrap;
+  @include bp-tab {
+    display: block;
   }
 }
 </style>

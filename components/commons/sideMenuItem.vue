@@ -62,16 +62,24 @@ export default {
   font-size: 1.6rem;
   position: relative;
 
+  @include bp-tab {
+    color: $color-white;
+  }
+
   .mark {
     width: 10px;
     height: 10px;
     border-radius: 5px;
     background-color: $color-primary;
     position: absolute;
-    top: 50%;
+    top: 8px;
     left: -20px;
-    transform: translateY(-50%) scale(0);
+    transform: scale(0);
     // opacity: 0;
+
+    @include bp-tab {
+      background-color: $color-white;
+    }
   }
 }
 </style>

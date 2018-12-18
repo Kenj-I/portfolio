@@ -38,6 +38,10 @@ export default {
     text-align: center;
     display: flex;
     justify-content: center;
+
+    @include bp-sp-w {
+      flex-direction: column;
+    }
   }
 }
 </style>

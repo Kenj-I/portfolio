@@ -1,5 +1,5 @@
 @mixin bp-sp {
-  @media screen and (max-width: 479) {
+  @media screen and (max-width: 479px) {
     @content;
   }
 }

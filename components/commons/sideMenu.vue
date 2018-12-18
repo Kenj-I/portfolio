@@ -37,6 +37,12 @@ export default {
 .menu {
   padding-left: 100px;
 
+  @include bp-tab {
+    padding: 40px 0 0 0;
+    width: 70px;
+    margin: 0 auto;
+  }
+
   .container {
     list-style: none;
 

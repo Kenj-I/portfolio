@@ -12,5 +12,9 @@ export default {};
 section {
   padding-left: 50px;
   margin-bottom: 30px;
+
+  @include bp-sp-w {
+    padding-left: 20px;
+  }
 }
 </style>

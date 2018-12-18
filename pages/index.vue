@@ -25,16 +25,6 @@ export default {
     foot,
   },
   transition: {
-    // enter(el, done) {
-    //   TweenMax.to('.wrapper', 2, {
-    //     opacity: 1,
-    //     ease: Power3.easeOut,
-    //     startAt: {
-    //       opacity: 0,
-    //     },
-    //     onComplete: done,
-    //   });
-    // },
     leave(el, done) {
       TweenMax.to('.main, footer', 0.8, {
         opacity: 0,

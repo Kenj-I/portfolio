@@ -62,6 +62,10 @@ export default {
   top: 0;
   left: -250px;
 
+  @include bp-tab {
+    display: none;
+  }
+
   .title {
     margin: 100px 0;
     text-align: center;

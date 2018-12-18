@@ -28,21 +28,26 @@ li {
   cursor: pointer;
   position: relative;
 
+  @include bp-sp-w {
+    margin: 0 auto;
+  }
+
   a {
     &::after {
       position: absolute;
-      bottom: 0;
-      left: 50%;
+      bottom: -2px;
+      left: 0;
       content: '';
-      width: 0;
+      width: 100%;
       height: 3px;
       background-color: $color-primary;
-      transition: all 0.2s;
       border-radius: 1.5px;
-      transform: translateX(-50%);
+      transform: scale(0, 1);
+      transform-origin: center top;
+      transition: transform 0.2s;
     }
     &:hover::after {
-      width: 100%;
+      transform: scale(1, 1);
     }
   }
 }

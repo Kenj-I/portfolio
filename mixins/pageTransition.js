@@ -45,7 +45,7 @@ export default {
     },
   },
   mounted() {
-    const hoge = '.card';
-    init(hoge);
+    const target = '.card';
+    init(target);
   },
 };
