@@ -12,10 +12,10 @@ h1 {
   text-align: center;
   font-weight: 500;
   letter-spacing: 5px;
+  white-space: nowrap;
 
   @include bp-sp-w {
     font-size: 3rem;
-    white-space: nowrap;
   }
 }
 </style>
