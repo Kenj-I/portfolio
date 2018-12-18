@@ -53,7 +53,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Quicksand',
+        href: 'https://fonts.googleapis.com/css?family=Quicksand:400,500,700',
       },
     ],
   },
