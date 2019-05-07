@@ -107,6 +107,12 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+  sitemap: {
+    path: '/sitemap.xml', // 出力パス
+    hostname: 'https://kens-portfolio.com',
+    cacheTime: 1000 * 60 * 15,
+    generate: true, // nuxt generate で静的ファイル出力する場合にはtrueにする
+  },
 
   /*
   ** Build configuration
