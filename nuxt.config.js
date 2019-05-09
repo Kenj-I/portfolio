@@ -85,14 +85,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    [
-      'nuxt-sass-resources-loader',
-      [
-        '@/assets/sass/variables.scss',
-        '@/assets/sass/mixin.scss',
-        '@/assets/sass/breakpoint.scss',
-      ],
-    ],
+    '@nuxtjs/style-resources',
     [
       '@nuxtjs/google-analytics',
       {
@@ -106,6 +99,13 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  styleResources: {
+    scss: [
+      '@/assets/sass/variables.scss',
+      '@/assets/sass/mixin.scss',
+      '@/assets/sass/breakpoint.scss',
+    ],
   },
   sitemap: {
     path: '/sitemap.xml', // 出力パス
